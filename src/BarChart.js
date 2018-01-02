@@ -21,7 +21,7 @@ class BarChart extends Component {
   createBarChart() {
     const node = this.node;
     const dataMax = max(this.props.data);
-    const yScale = ScaleLinear() 
+    const yScale = scaleLinear() 
       .domain([0, dataMax])
       .range([0, this.props.size[1]]);
 
